@@ -66,7 +66,6 @@ exports.createCandidate = (req, res, next) => {
 
 exports.updateCandidate = (req, res, next) => {
   const candidateId = req.params.candidateId;
-  console.log(candidateId);
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     const error = new Error("Validation failed, entered data is incorrect.");
@@ -77,7 +76,6 @@ exports.updateCandidate = (req, res, next) => {
   const status = req.body.status;
   const feedback = req.body.feedback;
   const rating = req.body.rating;
-  console.log(req.body.name);
   Candidate.findById(candidateId)
     .then((candidate) => {
       if (!candidate) {
