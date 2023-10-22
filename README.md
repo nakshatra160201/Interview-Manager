@@ -9,6 +9,8 @@ Interview Manager is a web application for managing interview candidates and con
 - [Models](#models)
 - [Controllers](#controllers)
 - [Routes](#routes)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
 
 ## Getting Started
 
@@ -42,7 +44,7 @@ On the `/candidates` page, you can:
 - Edit existing candidate details
 - Delete a candidate
 
-Authentication and Candidate services have been created to communicate with the backend from within the components.
+Authentication and Candidate services have been created to communicate with the backend from within the components. JWT tokens are used for authentication.
 
 ### Backend
 
@@ -101,5 +103,19 @@ The backend controllers handle user authentication and candidate management:
 
 ## Routes
 
-The API routes for the backend are defined in the `/routes` directory. They handle requests related to user authentication and candidate management.
+The API routes for the backend are defined in the `/routes` directory. They handle requests related to user authentication and candidate management. JWT tokens are used for user authentication.
+
+## Screenshots
+
+![App Screenshot](loginim.png)
+![App Screenshot](loginimwrong.png)
+![App Screenshot](signupim.png)
+![App Screenshot](candidatesim.png)
+
+
+## Live Demo
+
+[Watch the Live Demo on YouTube](https://youtu.be/usbLSHQ8DlI)
+
+Unfortunately, due to limitations with deploying on Heroku, I was unable to provide a live deployment. Instead, I recorded a video to give you a first-hand experience of Interview Manager.
 
